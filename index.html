@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffet Italiano Premiumm - VH Catering</title>
+    <meta name="description"
+        content="VH Catering ofrece Buffet Italiano para eventos corporativos, bodas y celebraciones privadas en Dallas. Pastas, ensaladas y aperitivos. Llama a Javier Velasco: (214) 258-3729." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAV ─── -->
+    <nav id="navbar">
+        <a href="#inicio" class="nav-logo" aria-label="VH Catering Inicio">
+            <img src="assets/images/vh_logo_official.png" alt="VH Catering" onerror="this.style.display='none'" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="#nosotros" data-i18n="nav_about">Nosotros</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">Menú</a></li>
+            <li><a href="#paquetes" data-i18n="nav_packages">Paquetes</a></li>
+            <li><a href="#galeria" data-i18n="nav_gallery">Galería</a></li>
+            <li><a href="#contacto" class="nav-cta" data-i18n="nav_cta">Solicitar cotización</a></li>
+        </ul>
+        <div class="lang-switcher" style="display: flex; gap: 8px; margin-left: 40px; align-items: center;">
+            <button id="lang-es" onclick="setLang('es')"
+                style="background:none;border:none;cursor:pointer;font-size:11px;letter-spacing:1px;font-family:'Inter', sans-serif;">ES</button>
+            <span style="color:var(--grey4);font-size:10px;">|</span>
+            <button id="lang-en" onclick="setLang('en')"
+                style="background:none;border:none;cursor:pointer;font-size:11px;letter-spacing:1px;font-family:'Inter', sans-serif;">EN</button>
+        </div>
+    </nav>
+
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="inicio">
+        <div class="hero-left">
+            <div class="hero-tag"><span data-i18n="hero_tag">Buffet Italiano</span></div>
+            <h1 data-i18n="hero_title">Sabor que <em>eleva</em><br>cada ocasión</h1>
+            <p data-i18n="hero_desc">En VH Catering ofrecemos Buffet Italiano auténtico para bodas, eventos corporativos
+                y celebraciones
+                privadas. Lasañas, pastas, ensaladas y aperitivos preparados con técnica y pasión. Rinde para 10–12
+                personas por charola.</p>
+            <div class="hero-btns">
+                <a href="#paquetes" class="btn-dark" data-i18n="hero_btn_pkg">Ver paquetes</a>
+                <a href="#menu" class="btn-ghost" data-i18n="hero_btn_menu">Ver menú completo</a>
+            </div>
+            <p class="hero-location" data-i18n="hero_location">Dallas–Fort Worth, Texas</p>
+        </div>
+        <div class="hero-right">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=1200&q=80"
+                alt="Platillos VH Catering Buffet Italiano" />
+            <div class="hero-right-overlay"></div>
+        </div>
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <div class="line-section">
+        <span class="label" data-i18n="marquee_label_1">Especialidades</span>
+        <div class="marquee-wrap">
+            <div class="marquee">
+                <span data-i18n="marquee_item_1">Lasaña Tradicional</span><span>·</span>
+                <span data-i18n="marquee_item_2">Pasta al Chipotle</span><span>·</span>
+                <span data-i18n="marquee_item_3">Pollo Parmesano</span><span>·</span>
+                <span data-i18n="marquee_item_4">Fettuccine Alfredo</span><span>·</span>
+                <span data-i18n="marquee_item_5">Pollo Chardonnay</span><span>·</span>
+                <span data-i18n="marquee_item_6">Ensalada César</span><span>·</span>
+                <span data-i18n="marquee_item_7">Hot Wings</span><span>·</span>
+                <span data-i18n="marquee_item_8">Chicken Tenders</span><span>·</span>
+                <span data-i18n="marquee_item_1">Lasaña Tradicional</span><span>·</span>
+                <span data-i18n="marquee_item_2">Pasta al Chipotle</span><span>·</span>
+                <span data-i18n="marquee_item_3">Pollo Parmesano</span><span>·</span>
+                <span data-i18n="marquee_item_4">Fettuccine Alfredo</span><span>·</span>
+                <span data-i18n="marquee_item_5">Pollo Chardonnay</span><span>·</span>
+                <span data-i18n="marquee_item_6">Ensalada César</span><span>·</span>
+                <span data-i18n="marquee_item_7">Hot Wings</span><span>·</span>
+                <span data-i18n="marquee_item_8">Chicken Tenders</span><span>·</span>
+            </div>
+        </div>
+        <span class="label" data-i18n="hero_location">Dallas, TX</span>
+    </div>
+
+    <!-- ─── NOSOTROS ─── -->
+    <section class="about section" id="nosotros">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-left reveal">
+                    <div class="about-num">VH</div>
+                    <div class="about-label" data-i18n="about_tag">Buffet Italiano</div>
+                </div>
+                <div class="about-right reveal">
+                    <p class="label" data-i18n="about_label">Nuestra filosofía</p>
+                    <h2 data-i18n="about_title">Más que comida — una experiencia que se recuerda</h2>
+                    <p data-i18n="about_p1_html">En <strong>VH Catering</strong> combinamos la tradición de la cocina
+                        italiana con el calor de la
+                        hospitalidad texana. Cada evento es tratado como único, adaptando el menú y el servicio a las
+                        necesidades de nuestros clientes.</p>
+                    <p data-i18n="about_p2_html">Nuestro equipo liderado por <strong>Javier Velasco</strong> garantiza
+                        puntualidad,
+                        presentación impecable y sabores auténticos que deleitan a cada invitado.</p>
+                    <ul class="about-list">
+                        <li data-i18n="about_li1">Cada charola rinde aprox. 10–12 personas</li>
+                        <li data-i18n="about_li2">Menús personalizados por tipo de evento</li>
+                        <li data-i18n="about_li3">Servicio profesional con cargo fijo de $60</li>
+                        <li data-i18n="about_li4">Atención personalizada desde la cotización hasta el evento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── MENÚ ─── -->
+    <section class="menu-section section" id="menu">
+        <div class="container">
+            <div class="menu-top reveal">
+                <div>
+                    <p class="label" data-i18n="menu_tag">Buffet Italiano</p>
+                    <h2 data-i18n="menu_title">El Menú</h2>
+                </div>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" id="tab-pastas" onclick="switchTab(this,'pastas')"
+                        data-i18n="menu_tab_pastas">Pastas</button>
+                    <button class="menu-tab" id="tab-ensaladas" onclick="switchTab(this,'ensaladas')"
+                        data-i18n="menu_tab_salads">Ensaladas</button>
+                    <button class="menu-tab" id="tab-aperitivos" onclick="switchTab(this,'aperitivos')"
+                        data-i18n="menu_tab_apps">Aperitivos</button>
+                </div>
+            </div>
+
+            <!-- PASTAS -->
+            <div class="menu-panel active" id="menu-pastas">
+                <div class="menu-col-header">
+                    <span data-i18n="menu_col_dish">Platillo</span>
+                    <span data-i18n="menu_col_small">Chica</span>
+                    <span data-i18n="menu_col_large">Grande</span>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_lasagna_name">Lasaña Tradicional</div>
+                            <div class="menu-row-desc" data-i18n="menu_lasagna_desc">Traditional Lasagna — capas de
+                                carne, salsa marinara y queso
+                                gratinado</div>
+                        </div>
+                        <span class="menu-price-lg">$80</span>
+                        <span class="menu-price">$125</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_potato_lasagna_name">Lasaña de Papa</div>
+                            <div class="menu-row-desc" data-i18n="menu_potato_lasagna_desc">Potato Lasagna — lasaña de
+                                papa cremosa con queso fundido</div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_chipotle_name">Pasta al Chipotle</div>
+                            <div class="menu-row-desc" data-i18n="menu_chipotle_desc">Penne en salsa cremosa de chipotle
+                                con toque ahumado</div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_ziti_name">Baked Ziti</div>
+                            <div class="menu-row-desc" data-i18n="menu_ziti_desc">Ziti horneado con salsa de tomate,
+                                ricotta y mozzarella gratinada
+                            </div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_parm_name">Pollo Parmesano</div>
+                            <div class="menu-row-desc" data-i18n="menu_parm_desc">Chicken Parmeson — pollo empanizado
+                                con salsa marinara y queso
+                                parmesano</div>
+                        </div>
+                        <span class="menu-price-lg">$80</span>
+                        <span class="menu-price">$125</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_pesto_name">Penne al Pesto</div>
+                            <div class="menu-row-desc" data-i18n="menu_pesto_desc">Penne con salsa pesto de albahaca
+                                fresca, piñones y parmesano
+                            </div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_chardonnay_name">Pollo Chardonnay</div>
+                            <div class="menu-row-desc" data-i18n="menu_chardonnay_desc">Chicken Chardonnay — pollo en
+                                salsa cremosa de vino blanco y
+                                hierbas</div>
+                        </div>
+                        <span class="menu-price-lg">$80</span>
+                        <span class="menu-price">$125</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_alfredo_name">Fettuccine Alfredo</div>
+                            <div class="menu-row-desc" data-i18n="menu_alfredo_desc">Fettuccine en salsa clásica Alfredo
+                                de crema y parmesano</div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_carbonara_name">Fettuccine Carbonara</div>
+                            <div class="menu-row-desc" data-i18n="menu_carbonara_desc">Chicken Chardonnay — fettuccine
+                                con salsa carbonara y pollo</div>
+                        </div>
+                        <span class="menu-price-lg">$80</span>
+                        <span class="menu-price">$125</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_marinara_name">Espagueti Marinara</div>
+                            <div class="menu-row-desc" data-i18n="menu_marinara_desc">Spaghetti Marinara — espagueti en
+                                salsa de tomate San Marzano con
+                                albahaca</div>
+                        </div>
+                        <span class="menu-price-lg">$65</span>
+                        <span class="menu-price">$110</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_kids_name">Espagueti Para Niños</div>
+                            <div class="menu-row-desc" data-i18n="menu_kids_desc">Kids Spaghetti — espagueti en salsa
+                                suave, ideal para los más
+                                pequeños</div>
+                        </div>
+                        <span class="menu-price-lg">$50</span>
+                        <span class="menu-price">$100</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ENSALADAS -->
+            <div class="menu-panel" id="menu-ensaladas">
+                <div class="menu-col-header">
+                    <span data-i18n="menu_col_salad">Ensalada</span>
+                    <span data-i18n="menu_col_small">Chica</span>
+                    <span data-i18n="menu_col_large">Grande</span>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_house_name">Ensalada de la Casa</div>
+                            <div class="menu-row-desc" data-i18n="menu_house_desc">House Salad — mezcla de lechugas
+                                frescas, tomate, zanahoria y
+                                aderezo de la casa</div>
+                        </div>
+                        <span class="menu-price-lg">$40</span>
+                        <span class="menu-price">$50</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_caesar_name">Ensalada César</div>
+                            <div class="menu-row-desc" data-i18n="menu_caesar_desc">Caesar Salad — lechuga romana,
+                                crutones, parmesano y aderezo
+                                clásico César</div>
+                        </div>
+                        <span class="menu-price-lg">$45</span>
+                        <span class="menu-price">$55</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_cobb_name">Ensalada Cobb</div>
+                            <div class="menu-row-desc" data-i18n="menu_cobb_desc">Cobb Salad — pollo, tocino, huevo,
+                                aguacate, tomate y queso azul
+                            </div>
+                        </div>
+                        <span class="menu-price-lg">$60</span>
+                        <span class="menu-price">$80</span>
+                    </li>
+                    <li class="menu-row reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_antipasto_name">Ensalada Antipasto</div>
+                            <div class="menu-row-desc" data-i18n="menu_antipasto_desc">Antipasto Salad — aceitunas,
+                                pepperoni, quesos, pepinillos y
+                                vinagreta italiana</div>
+                        </div>
+                        <span class="menu-price-lg">$60</span>
+                        <span class="menu-price">$80</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- APERITIVOS -->
+            <div class="menu-panel" id="menu-aperitivos">
+                <div class="menu-col-header">
+                    <span data-i18n="menu_col_app">Aperitivo</span>
+                    <span data-i18n="menu_col_price">Precio</span>
+                    <span></span>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-row single reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_mozzarella_name">Mozzarella Sticks</div>
+                            <div class="menu-row-desc" data-i18n="menu_mozzarella_desc">Palitos de mozzarella
+                                empanizados, crujientes por fuera y
+                                derretidos por dentro</div>
+                        </div>
+                        <span class="menu-price">$45</span>
+                    </li>
+                    <li class="menu-row single reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_tenders_name">Chicken Tenders</div>
+                            <div class="menu-row-desc" data-i18n="menu_tenders_desc">Tiras de pollo empanizadas, jugosas
+                                y doradas al horno</div>
+                        </div>
+                        <span class="menu-price">$65</span>
+                    </li>
+                    <li class="menu-row single reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_nuggets_name">Chicken Nuggets</div>
+                            <div class="menu-row-desc" data-i18n="menu_nuggets_desc">Nuggets de pollo crujientes,
+                                perfectos para niños y adultos</div>
+                        </div>
+                        <span class="menu-price">$45</span>
+                    </li>
+                    <li class="menu-row single reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_wings_name">Hot Wings</div>
+                            <div class="menu-row-desc" data-i18n="menu_wings_desc">Alitas de pollo en salsa picante,
+                                sazonadas y horneadas al punto
+                                perfecto</div>
+                        </div>
+                        <span class="menu-price">$65</span>
+                    </li>
+                    <li class="menu-row single reveal">
+                        <div>
+                            <div class="menu-row-name" data-i18n="menu_fries_name">French Fries</div>
+                            <div class="menu-row-desc" data-i18n="menu_fries_desc">Papas fritas crujientes con sal y
+                                especias al gusto</div>
+                        </div>
+                        <span class="menu-price">$45</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FEE NOTE ─── -->
+    <div class="fee-banner">
+        <p data-i18n="fee_banner_html">⚑ <strong>Catering Service Fee: $60</strong> — Cada charola rinde aproximadamente
+            <strong>10–12
+                personas</strong>. Extras disponibles por separado.
+        </p>
+    </div>
+
+    <!-- ─── EXTRAS ─── -->
+    <section class="extras-section section">
+        <div class="container">
+            <div class="reveal">
+                <p class="label" data-i18n="extras_label">Complementa tu pedido</p>
+                <h2 data-i18n="extras_title">Extras disponibles</h2>
+            </div>
+            <div class="extras-grid">
+                <div class="extra-card reveal">
+                    <div class="extra-card-name" data-i18n="extra_chicken">Chicken</div>
+                    <div class="extra-card-price">+ $25</div>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-card-name" data-i18n="extra_meatballs">Meatballs</div>
+                    <div class="extra-card-price">+ $30</div>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-card-name" data-i18n="extra_shrimp">Shrimp</div>
+                    <div class="extra-card-price">+ $35</div>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-card-name" data-i18n="extra_sausage">Sausage</div>
+                    <div class="extra-card-price">+ $25</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PAQUETES ─── -->
+    <section class="packages section" id="paquetes">
+        <div class="container">
+            <div class="packages-header reveal">
+                <p class="label" data-i18n="pkg_label">Elige tu paquete</p>
+                <h2 data-i18n="pkg_title">Paquetes Buffet Italiano</h2>
+                <p data-i18n="pkg_desc">Cada paquete incluye el Catering Service Fee de $60 y rinde aprox. 10–12
+                    personas por charola.</p>
+            </div>
+            <div class="packages-grid reveal">
+
+                <!-- PAQUETE BÁSICO -->
+                <div class="pkg">
+                    <div class="pkg-name" data-i18n="pkg1_name">Básico</div>
+                    <div class="pkg-sub" data-i18n="pkg1_sub">Pasta + Ensalada</div>
+                    <div class="pkg-price"><span>$</span>145</div>
+                    <div class="pkg-serves" data-i18n="pkg1_serves">Desde · 10–12 personas · + $60 service fee</div>
+                    <hr class="pkg-divider" />
+                    <ul class="pkg-includes">
+                        <li class="highlight" data-i18n="pkg1_li1">1 Pasta a elegir (Chica)</li>
+                        <li class="highlight" data-i18n="pkg1_li2">1 Ensalada a elegir (Chica)</li>
+                        <li data-i18n="pkg_common_li1">Catering Service Fee incluido</li>
+                        <li data-i18n="pkg_common_li2">Entrega y montaje</li>
+                        <li data-i18n="pkg_common_li3">Utensilios y charolas</li>
+                    </ul>
+                    <a href="#contacto" class="pkg-cta" data-i18n="pkg_cta">Solicitar cotización</a>
+                </div>
+
+                <!-- PAQUETE CLÁSICO (FEATURED) -->
+                <div class="pkg featured">
+                    <div class="pkg-badge" data-i18n="pkg2_badge">Más popular</div>
+                    <div class="pkg-name" data-i18n="pkg2_name">Clásico</div>
+                    <div class="pkg-sub" data-i18n="pkg2_sub">Pasta + Ensalada + Aperitivo</div>
+                    <div class="pkg-price"><span>$</span>225</div>
+                    <div class="pkg-serves" data-i18n="pkg2_serves">Desde · 10–24 personas · + $60 service fee</div>
+                    <hr class="pkg-divider" />
+                    <ul class="pkg-includes">
+                        <li class="highlight" data-i18n="pkg2_li1">1 Pasta a elegir (Grande)</li>
+                        <li class="highlight" data-i18n="pkg2_li2">1 Ensalada a elegir (Grande)</li>
+                        <li class="highlight" data-i18n="pkg2_li3">1 Aperitivo a elegir</li>
+                        <li data-i18n="pkg_common_li1">Catering Service Fee incluido</li>
+                        <li data-i18n="pkg_common_li2">Entrega y montaje</li>
+                        <li data-i18n="pkg_common_li3">Utensilios y charolas</li>
+                        <li data-i18n="pkg2_li7">Asesoría en selección de menú</li>
+                    </ul>
+                    <a href="#contacto" class="pkg-cta" data-i18n="pkg_cta">Solicitar cotización</a>
+                </div>
+
+                <!-- PAQUETE PREMIUM -->
+                <div class="pkg">
+                    <div class="pkg-name" data-i18n="pkg3_name">Premium</div>
+                    <div class="pkg-sub" data-i18n="pkg3_sub">2 Pastas + Ensalada + 2 Aperitivos + Extra</div>
+                    <div class="pkg-price"><span>$</span>375</div>
+                    <div class="pkg-serves" data-i18n="pkg3_serves">Desde · 20–40 personas · + $60 service fee</div>
+                    <hr class="pkg-divider" />
+                    <ul class="pkg-includes">
+                        <li class="highlight" data-i18n="pkg3_li1">2 Pastas a elegir (Grande)</li>
+                        <li class="highlight" data-i18n="pkg3_li2">1 Ensalada a elegir (Grande)</li>
+                        <li class="highlight" data-i18n="pkg3_li3">2 Aperitivos a elegir</li>
+                        <li class="highlight" data-i18n="pkg3_li4">1 Extra a elegir (Chicken, Shrimp…)</li>
+                        <li data-i18n="pkg_common_li1">Catering Service Fee incluido</li>
+                        <li data-i18n="pkg_common_li2">Entrega y montaje</li>
+                        <li data-i18n="pkg_common_li3">Utensilios y charolas</li>
+                        <li data-i18n="pkg3_li8">Asesoría completa de menú</li>
+                    </ul>
+                    <a href="#contacto" class="pkg-cta" data-i18n="pkg_cta">Solicitar cotización</a>
+                </div>
+
+            </div>
+            <p class="pkg-note reveal" data-i18n="pkg_note_html">
+                ¿Necesitas algo diferente? Construimos tu pedido a la medida. Llama a <strong>(214) 258-3729</strong>
+                para una cotización personalizada sin costo.
+            </p>
+        </div>
+    </section>
+
+    <!-- ─── GALERÍA ─── -->
+    <section class="gallery-section section" id="galeria">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <p class="label" data-i18n="gal_label">Nuestro trabajo real</p>
+                <h2 data-i18n="gal_title">Así luce nuestro Buffet Italiano</h2>
+                <p data-i18n="gal_desc">Cada charola es preparada con dedicación y presentada con el detalle que merece
+                    tu evento.</p>
+            </div>
+            <div class="gallery-bento">
+
+                <div class="gallery-item g-item-1 reveal">
+                    <img src="assets/images/gallery_ensalada1.jpg" alt="Ensalada Antipasto VH Catering"
+                        loading="lazy" />
+                    <div class="gallery-item-caption">
+                        <span data-i18n="gal1_name">Ensalada Antipasto</span>
+                        <em data-i18n="gal1_desc">Tomate, pepino, jamón, huevo y vegetales frescos</em>
+                    </div>
+                </div>
+
+                <div class="gallery-item g-item-2 reveal">
+                    <img src="assets/images/gallery_buffet_setup.png" alt="Buffet Setup VH Catering" loading="lazy" />
+                    <div class="gallery-item-caption">
+                        <span data-i18n="gal2_name">Montaje Buffet</span>
+                        <em data-i18n="gal2_desc">Presentación profesional en charolas calefactadas</em>
+                    </div>
+                </div>
+
+                <div class="gallery-item g-item-3 reveal">
+                    <img src="assets/images/gallery_pasta_charola.png" alt="Pasta Charola VH Catering" loading="lazy" />
+                    <div class="gallery-item-caption">
+                        <span data-i18n="gal3_name">Pasta al Chipotle</span>
+                        <em data-i18n="gal3_desc">Charola grande — aprox. 10–12 personas</em>
+                    </div>
+                </div>
+
+                <div class="gallery-item g-item-4 reveal">
+                    <img src="assets/images/gallery_decoracion_cisne.png" alt="Decoración cisne manzana VH Catering"
+                        loading="lazy" />
+                    <div class="gallery-item-caption">
+                        <span data-i18n="gal4_name">Arte Culinario</span>
+                        <em data-i18n="gal4_desc">Decoraciones artesanales en cada presentación</em>
+                    </div>
+                </div>
+
+                <div class="gallery-item g-item-5 reveal">
+                    <img src="assets/images/gallery_decoracion_flor.png" alt="Decoración flor VH Catering"
+                        loading="lazy" />
+                    <div class="gallery-item-caption">
+                        <span data-i18n="gal5_name">Detalle &amp; Presentación</span>
+                        <em data-i18n="gal5_desc">Escultura vegetal hecha a mano</em>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACTO ─── -->
+    <section class="contact section" id="contacto">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-left reveal">
+                    <p class="label" data-i18n="contact_label">Hablemos de tu evento</p>
+                    <h2 data-i18n="contact_title">Cotización sin costo ni compromiso</h2>
+                    <ul class="contact-facts">
+                        <li class="contact-fact">
+                            <span class="contact-fact-label" data-i18n="contact_f1">Contacto</span>
+                            <span class="contact-fact-val">Javier Velasco</span>
+                        </li>
+                        <li class="contact-fact">
+                            <span class="contact-fact-label" data-i18n="contact_f2">Teléfono</span>
+                            <span class="contact-fact-val">
+                                <a href="tel:+12142583729">(214) 258-3729</a>
+                            </span>
+                        </li>
+                        <li class="contact-fact">
+                            <span class="contact-fact-label" data-i18n="contact_f3">Ubicación</span>
+                            <span class="contact-fact-val" data-i18n="contact_v3">Dallas–Fort Worth, Texas</span>
+                        </li>
+                        <li class="contact-fact">
+                            <span class="contact-fact-label" data-i18n="contact_f4">Service Fee</span>
+                            <span class="contact-fact-val" data-i18n="contact_v4">$60 por evento</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form reveal">
+                    <form onsubmit="handleForm(event)">
+                        <div class="form-row">
+                            <label for="nombre" data-i18n="form_name">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                                data-i18n-ph="form_name_ph" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="telefono" data-i18n="form_tel">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="(xxx) xxx-xxxx"
+                                data-i18n-ph="form_tel_ph" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email" data-i18n="form_email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com"
+                                data-i18n-ph="form_email_ph" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="paquete" data-i18n="form_pkg">Paquete de interés</label>
+                            <select id="paquete" name="paquete">
+                                <option value="" data-i18n="form_pkg_opt1">Selecciona una opción</option>
+                                <option data-i18n="form_pkg_opt2">Paquete Básico — desde $145</option>
+                                <option data-i18n="form_pkg_opt3">Paquete Clásico — desde $225</option>
+                                <option data-i18n="form_pkg_opt4">Paquete Premium — desde $375</option>
+                                <option data-i18n="form_pkg_opt5">Pedido personalizado</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="evento" data-i18n="form_event">Tipo de evento</label>
+                            <select id="evento" name="evento">
+                                <option value="" data-i18n="form_event_opt1">Selecciona una opción</option>
+                                <option data-i18n="form_event_opt2">Boda</option>
+                                <option data-i18n="form_event_opt3">Evento corporativo</option>
+                                <option data-i18n="form_event_opt4">XV años</option>
+                                <option data-i18n="form_event_opt5">Bautizo</option>
+                                <option data-i18n="form_event_opt6">Reunión privada</option>
+                                <option data-i18n="form_event_opt7">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="invitados" data-i18n="form_guests">Número de invitados</label>
+                            <input type="number" id="invitados" name="invitados" placeholder="Ej. 80"
+                                data-i18n-ph="form_guests_ph" min="1" />
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje" data-i18n="form_msg">Platillos de interés y detalles</label>
+                            <textarea id="mensaje" name="mensaje"
+                                placeholder="Ej: Me interesa la Lasaña Tradicional grande + Ensalada César + Hot Wings para una boda de 50 personas el 15 de mayo…"
+                                data-i18n-ph="form_msg_ph"></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn-submit" data-i18n="form_submit">Enviar
+                            solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-brand">
+            <img src="assets/images/vh_logo_official.png" alt="VH Catering" onerror="this.style.display='none'" />
+            <span class="footer-copy">VH Catering</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#nosotros" data-i18n="nav_about">Nosotros</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">Menú</a></li>
+            <li><a href="#paquetes" data-i18n="nav_packages">Paquetes</a></li>
+            <li><a href="#contacto" data-i18n="contact_f1">Contacto</a></li>
+        </ul>
+        <span class="footer-copy" data-i18n="footer_copy">© 2025 VH Catering. Dallas, TX — Buffet Italiano.</span>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
