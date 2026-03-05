@@ -1324,3 +1324,57 @@ footer {
     height: 28px;
   }
 }
+
+/* ─── WHATSAPP MODAL ─── */
+.wa-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-modal.open {
+  display: flex;
+}
+
+.wa-modal-content {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.wa-modal.open .wa-modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.wa-modal-close {
+  color: var(--grey3);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.wa-modal-close:hover {
+  color: var(--black);
+}

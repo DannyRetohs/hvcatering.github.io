@@ -136,7 +136,7 @@ const translations = {
         "gal_label": "Nuestro trabajo real",
         "gal_title": "Así luce nuestro Buffet Italiano",
         "gal_desc": "Cada charola es preparada con dedicación y presentada con el detalle que merece tu evento.",
-        
+
         "gal1_name": "Ensalada Antipasto",
         "gal1_desc": "Tomate, pepino, jamón, huevo y vegetales frescos",
         "gal2_name": "Montaje Buffet",
@@ -169,7 +169,7 @@ const translations = {
         "form_pkg_opt3": "Paquete Clásico — desde $225",
         "form_pkg_opt4": "Paquete Premium — desde $375",
         "form_pkg_opt5": "Pedido personalizado",
-        
+
         "form_event": "Tipo de evento",
         "form_event_opt1": "Selecciona una opción",
         "form_event_opt2": "Boda",
@@ -185,7 +185,13 @@ const translations = {
         "form_msg_ph": "Ej: Me interesa la Lasaña Tradicional grande + Ensalada César + Hot Wings para una boda de 50 personas el 15 de mayo…",
         "form_submit": "Enviar solicitud",
 
-        "footer_copy": "© 2025 VH Catering. Dallas, TX — Buffet Italiano."
+        "footer_copy": "© 2025 VH Catering. Dallas, TX — Buffet Italiano.",
+
+        "wa_modal_title": "Contáctanos",
+        "wa_modal_desc": "Ingresa tus datos para continuar en WhatsApp.",
+        "wa_form_name_ph": "Nombre completo",
+        "wa_form_surname_ph": "Apellido",
+        "wa_btn_send": "Ir a WhatsApp"
     },
     en: {
         "nav_about": "About",
@@ -324,7 +330,7 @@ const translations = {
         "gal_label": "Our real work",
         "gal_title": "This is how our Italian Buffet looks",
         "gal_desc": "Every tray is prepared with dedication and presented with the detail your event deserves.",
-        
+
         "gal1_name": "Antipasto Salad",
         "gal1_desc": "Tomato, cucumber, ham, egg, and fresh vegetables",
         "gal2_name": "Buffet Setup",
@@ -357,7 +363,7 @@ const translations = {
         "form_pkg_opt3": "Classic Package — from $225",
         "form_pkg_opt4": "Premium Package — from $375",
         "form_pkg_opt5": "Custom order",
-        
+
         "form_event": "Event Type",
         "form_event_opt1": "Select an option",
         "form_event_opt2": "Wedding",
@@ -373,7 +379,13 @@ const translations = {
         "form_msg_ph": "Ex: I'm interested in the large Traditional Lasagna + Caesar Salad + Hot Wings for a wedding of 50 people on May 15th…",
         "form_submit": "Send Request",
 
-        "footer_copy": "© 2025 VH Catering. Dallas, TX — Italian Buffet."
+        "footer_copy": "© 2025 VH Catering. Dallas, TX — Italian Buffet.",
+
+        "wa_modal_title": "Contact Us",
+        "wa_modal_desc": "Enter your details to continue on WhatsApp.",
+        "wa_form_name_ph": "First Name",
+        "wa_form_surname_ph": "Last Name",
+        "wa_btn_send": "Go to WhatsApp"
     }
 };
 
@@ -388,7 +400,7 @@ function setLang(lang) {
 
 function translatePage() {
     const d = translations[currentLang];
-    
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (d[key]) {

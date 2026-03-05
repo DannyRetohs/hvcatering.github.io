@@ -21,6 +21,33 @@ function switchTab(btn, id) {
   document.getElementById('menu-' + id).classList.add('active');
 }
 
+/* ── WhatsApp Modal ── */
+function openWaModal() {
+  document.getElementById('waModal').classList.add('open');
+}
+
+function closeWaModal() {
+  document.getElementById('waModal').classList.remove('open');
+}
+
+function sendWhatsApp() {
+  const name = document.getElementById('waNombre').value.trim();
+  const surname = document.getElementById('waApellido').value.trim();
+
+  // Base text
+  let text = 'Hola, me interesa sus servicios.';
+
+  if (name || surname) {
+    text = `Hola, soy ${name} ${surname}, me interesa sus servicios.`.trim().replace(/\s+/g, ' ');
+  }
+
+  const phone = '12142583729';
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, '_blank');
+  closeWaModal();
+}
+
 /* ── Contact form ── */
 function handleForm(e) {
   e.preventDefault();
